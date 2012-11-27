@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+<h1>poop.</h1>
+<%else%>
+
+<div class="center hero-unit">
+<h1>Steven's Website</h1>
+<h2>
+	You can find my site <a href="http://www.arthousecoop.com">here</a>.
+	</h2>
+	
+	<%= link_to "Join My Fan Club", new_user_registration_path ,
+								class: "btn bth-large bth-primary"%>
+</div>
+
+<%end%>
